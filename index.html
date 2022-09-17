@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch - Mayank Kamra</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./favicon.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="container">
+      <img src="./bg.jpg" alt="stopwatch" />
+      <div id="stopwatchContainer">
+        <h1>Stopwatch</h1>
+        <div id="time">
+          <span class="digits" id="hours">00</span>
+          <span class="txt">Hr.</span>
+          <span class="digits" id="minutes">00</span>
+          <span class="txt">Min.</span>
+          <span class="digits" id="seconds">00</span>
+          <span class="txt">Sec.</span>
+          <span class="digits" id="secCount">00</span><br />
+        </div>
+        <div id="btns">
+          <button id="start" onclick="start()">Start</button>
+          <button id="stop" onclick="stop()">Stop</button>
+          <button id="resume" onclick="resume()">Resume</button>
+          <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        <div id="footer">
+          Created By
+          <a
+            href="https://mayankkamra.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mayank Kamra</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

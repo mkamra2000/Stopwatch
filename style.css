@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Rubik:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#container {
+  display: flex;
+  height: 100vh;
+}
+img {
+  width: 55%;
+}
+h1 {
+  font-family: "Aref Ruqaa Ink", serif;
+  font-size: 80px;
+  font-weight: 600;
+  margin: 30px 0px;
+}
+.digits {
+  font-size: 70px;
+  font-family: "Rubik", sans-serif;
+}
+.txt {
+  font-size: 25px;
+  font-weight: 600;
+}
+button {
+  cursor: pointer;
+  background-color: white;
+  padding: 12px 22px;
+  margin: 30px 10px;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-family: "Aref Ruqaa Ink", serif;
+  font-size: 22px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+}
+button:disabled {
+  border: 3px solid grey;
+}
+button:disabled:hover {
+  background-color: white;
+  color: grey;
+  border: 3px solid grey;
+}
+#footer {
+  position: absolute;
+  bottom: 15px;
+  font-family: "Aref Ruqaa Ink", serif;
+  font-size: 30px;
+}
+a {
+  color: black;
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 50px;
+  }
+  .digits {
+    font-size: 45px;
+  }
+  button {
+    font-size: 15px;
+    padding: 12px 22px;
+    margin: 30px 8px;
+  }
+}
+@media (min-width: 768px) and (max-width: 915px) {
+  #container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  img {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+    margin: 15px;
+    font-size: 50px;
+    margin-top: 0px;
+  }
+  .digits {
+    font-size: 40px;
+  }
+  .txt{
+    font-size: 15px;
+  }
+  #time {
+    padding-left: 15px;
+  }
+  button {
+    font-size: 25px;
+    width: 250px;
+    margin: 15px auto;
+  }
+  #start{
+    margin-top: 25px;
+  }
+  #btns{
+    text-align: center;
+  }
+  #footer {
+    bottom: 25px;
+    font-size: 20px;
+    left: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  button {
+    font-size: 20px;
+    width: 250px;
+    margin: 10px auto;
+  }
+}
